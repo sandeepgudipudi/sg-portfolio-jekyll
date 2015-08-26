@@ -1,0 +1,51 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+/* 
+   Typography
+   ========================================================================== */
+
+$doc-font-size: 16;
+$doc-line-height: 26;
+$paragraph-indent: true !default;
+$base-font: 'PT Serif', serif;
+$heading-font: 'PT Sans Narrow', sans-serif;
+$code-font: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+$alt-font: $base-font;
+
+/* 
+   Colors
+   ========================================================================== */
+
+$home-bg-color : #fff;
+$home-logo-color : #FBE3C4;
+
+$icon-color : #111;
+$icon-hover-color : gray;
+
+
+/* buttons */
+$primary			: #111;
+$success			: #5cb85c;
+$warning			: #dd8338;
+$danger				: #C64537;
+$info				  : #308cbc;
+
+
+
+/* links */
+$linkcolor 		    : #343434;
+$link-color       : $linkcolor;
+$linkcolorhover 	: darken($linkcolor, 10);
+$linkcolorvisited : lighten($linkcolorhover, 20);
+$linkcolorfocus 	: darken($linkcolorvisited, 10);
+
+/* 
+   Breakpoints
+   ========================================================================== */
+   
+$micro            : "only screen and (min-width: 30em)";
+$medium           : "only screen and (min-width: 47.5em)"; /* 760px - mobile breakpoint */
+$large            : "only screen and (min-width: 64.063em)"; /* min-width 1025px, large screens */
+$x-large          : "only screen and (min-width: 86.375em)";

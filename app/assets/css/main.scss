@@ -1,0 +1,10 @@
+---
+# This is the Front Matter block
+---
+@import "normalize"; // Normalize the Browsers 
+@import "vendor/font-awesome/font-awesome"; //icon styles
+@import "variables"; // Variables/constants/placeholders
+@import "mixins"; // Generic css functions
+@import "global"; // Common css
+@import "pages"; // Screen specific css
+@import "media-queries"; // Responsive Stuff
