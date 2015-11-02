@@ -8,7 +8,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "/sg-portfolio-jekyll" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  sandeepgudipudi
 
 # Build settings
 markdown: kramdown
@@ -16,9 +16,9 @@ kramdown:
   input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
 
 # Where things are
-source:      ./app
+source:      ./
 destination: ./_site
-data_source: ./data
+data_dir: ./data
 collections: null
 
 # jekyll config
