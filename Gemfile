@@ -6,3 +6,5 @@ gem 'jekyll-sitemap'
 
 
 gem 'font-awesome-sass'
+
+gem 'github-pages'
