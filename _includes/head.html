@@ -1,26 +1,36 @@
-<!--<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.md','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-</head>-->
-
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Sandeep Gudipudi</title>
+	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+	<meta name="keywords" content="{{ page.tags | join: ', ' }}">
+	<title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
 	<!--styles-->
 	<link rel="stylesheet" type="text/css"  href="{{ site.baseurl }}/assets/css/main.css">
+	<!--<link rel="canonical" href="{{ canonical }}">
+	<link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">-->
+	<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.url }}/sitemap.xml">
+	<link rel="canonical" href="{{ page.url | replace:'index.md','' | prepend: site.baseurl | prepend: site.url }}">
+  	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" >
 	<!--scripts-->
 	<script type="text/javascript" src="{{ site.baseurl }}/assets/js/vendor/jquery.min.js"></script>
 	<script type="text/javascript" src="{{ site.baseurl }}/assets/js/vendor/cufon_fonts.js"></script>
 	<script type="text/javascript" src="{{ site.baseurl }}/assets/js/app.js"></script>
 </head>
+
+   <!--  <link href="http://feeds.feedburner.com/MadeMistakes" type="application/atom+xml" rel="alternate" title="{{ site.title }} &#8211; Everything">
+    <link href="http://feeds.feedburner.com/MadeMistakesArticles" type="application/atom+xml" rel="alternate" title="{{ site.title }} &#8211; Articles">
+    <link href="http://feeds.feedburner.com/MadeMistakesMasteringPaper" type="application/atom+xml" rel="alternate" title="{{ site.title }} &#8211; Mastering Paper">
+    <link href="http://feeds.feedburner.com/MadeMistakesPaperFaces" type="application/atom+xml" rel="alternate" title="{{ site.title }} &#8211; PaperFaces Portraits">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta http-equiv="cleartype" content="on">  -->
+
+   <!-- Webmaster Tools verifications -->
+   <!-- {% if site.owner.google.verify %}<meta name="google-site-verification" content="{{ site.owner.google.verify }}">{% endif %}
+    {% if site.owner.bing.verify %}<meta name="msvalidate.01" content="{{ site.owner.bing.verify }}">{% endif %}
+    {% if site.owner.alexa.verify %}<meta name="alexaVerifyID" content="{{ site.owner.alexa.verify }}">{% endif %}
+    {% if site.owner.yandex.verify %}<meta name="yandex-verification" content="{{ site.owner.yandex.verify }}">{% endif %}
+
+    {% if site.owner.google.plus %}<link rel="author" href="{{ site.owner.google.plus }}?rel=author">{% endif %} -->

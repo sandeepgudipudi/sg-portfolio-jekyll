@@ -3,7 +3,6 @@
    HOME PAGE
    ========================================================================== */
 body{
-color:$home-logo-color;
 }
 .home-bg-img {
     height: auto;
@@ -27,11 +26,95 @@ color:$home-logo-color;
     top: 0;
 }
 .logo {
-	margin-top:-50px;
-	margin-bottom:200px;
+	/*margin-top:-50px;
+	margin-bottom:200px; */ //DELETE - REMOVE FOR DEFAULT LAYOUT
 }
 h1 {
     text-align: center;
     font-size: 73px;
-    color: $home-logo-color;
+}
+
+nav {
+	font-family: Brandon_Grotesque;
+    letter-spacing: 2px;
+    line-height: 12px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 15px 1.5% 15px 1.5% ;
+	a{
+		text-decoration: none;
+	}
+}
+
+nav ul li a {
+	color: $nav-color;
+}
+
+nav ul li a:hover {
+	color:$nav-hover-color;
+}
+
+nav ul li a.active {
+	color:$nav-hover-color;
+}
+
+
+
+
+/* Helper Classes
+--------------------------------------------- */
+
+.clearfix {
+	display: block;
+	clear: both;
+}
+
+
+
+/* Sections
+--------------------------------------------- */
+
+#container{
+	margin: 0 auto;
+	max-width: 1080px;
+}
+
+
+
+
+/* Content
+--------------------------------------------- */
+
+#content {
+	float: left;
+	padding: 3%;
+	width: 64%;
+}
+
+
+
+/* Sidebar
+--------------------------------------------- */
+
+aside {
+	float: right;
+	padding: 3%;
+	width: 24%;
+}
+
+
+
+/* Footer
+--------------------------------------------- */
+
+footer{
+	width: 94%;
+	padding: 3%;
+	border-top: 5px solid #E64A19;
+	text-align: center;
 }

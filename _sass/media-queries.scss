@@ -16,3 +16,17 @@
 	}
 }
 
+@media all and (max-width : 768px) {
+
+	#content {
+		width: 94%;
+		padding: 3%;	
+	}
+
+	#sidebar {
+		width: 94%;
+		padding: 3%;
+		border-top: 3px solid #E64A19;
+	}
+
+}
