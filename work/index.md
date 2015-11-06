@@ -1,7 +1,7 @@
 ---
-layout: blog_summary
-excerpt: "Sandeep Gudipudi's personal website and blog"
-tags: [Jekyll, responsive, blog]
+layout: default
+excerpt: "A minimal Jekyll theme for your blog by designer Michael Rose."
+tags: [Jekyll, theme, responsive, blog, template]
 image:
 feature: sample-image-1.jpg
 credit: WeGraphics

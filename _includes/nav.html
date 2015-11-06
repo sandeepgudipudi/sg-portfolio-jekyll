@@ -1,0 +1,12 @@
+<nav class="clear">{{ link.url }}
+	<ul>
+	<!-- _data directory not working currently -->
+	<!--	{% for link in site.data.nav %}
+	    <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+	  {% endfor %} -->
+	  		<li><a class='active' href="{{site.baseurl}}/">BLOG</a></li>
+			<li><a href="{{site.baseurl}}/work">WORK</a></li>
+			<li><a href="{{site.baseurl}}/about">ABOUT</a></li>
+			<li><a href="{{site.baseurl}}/contact">CONTACT</a></li>
+	</ul>
+</nav>

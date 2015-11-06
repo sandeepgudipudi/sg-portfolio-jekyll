@@ -3,6 +3,7 @@
    HOME PAGE
    ========================================================================== */
 body{
+overflow:scroll;
 }
 .home-bg-img {
     height: auto;
@@ -25,6 +26,11 @@ body{
     position: absolute;
     top: 0;
 }
+
+
+/* ==========================================================================
+   MENU LOGO
+   ========================================================================== */
 .logo {
 	/*margin-top:-50px;
 	margin-bottom:200px; */ //DELETE - REMOVE FOR DEFAULT LAYOUT
@@ -36,7 +42,7 @@ h1 {
 }
 
 nav {
-	font-family: Brandon_Grotesque;
+	font-family: Brandon_Grotesque; //proxima-nova
     letter-spacing: 2px;
     line-height: 12px;
     font-size: 12px;
@@ -61,25 +67,22 @@ nav ul li a {
 
 nav ul li a:hover {
 	color:$nav-hover-color;
+	animation: text-shadow 1s infinite alternate;
+    text-shadow: 0 0 black;
 }
 
 nav ul li a.active {
 	color:$nav-hover-color;
 }
 
+/* ==========================================================================
+   DEFAULT LAYOUT
+   ========================================================================== */
+   
 
-
-
-/* Helper Classes
---------------------------------------------- */
-
-.clearfix {
-	display: block;
-	clear: both;
-}
-
-
-
+/* ==========================================================================
+   2 COLUMN LAYOUT
+   ========================================================================== */
 /* Sections
 --------------------------------------------- */
 
@@ -121,4 +124,11 @@ footer{
 	padding: 3%;
 	border-top: 5px solid #E64A19;
 	text-align: center;
+}
+
+
+.post{
+height:500px;
+margin-bottom : 25px;
+    box-shadow: 0px 0px 10px #B3B3B3;
 }

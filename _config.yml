@@ -3,7 +3,7 @@ title: Sandeep Gudipudi # used in meta tag
 email: sandeep@sandeepgudipudi.com
 # Description is used in meta tag and feed.xml for google seacrh
 description: > # Sandeep Gudipudi - Personal Website and Blog. 
-baseurl: "/sg-portfolio-jekyll" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: http://sandeepgudipudi.com # the base hostname & protocol for your site
 
 
