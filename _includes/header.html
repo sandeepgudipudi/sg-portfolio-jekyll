@@ -1,7 +1,48 @@
-<header>
-	<div class="logo">
-            <h1>Sandeep Gudipudi</h1>
-     </div>
-</header>
-<!-- Navigation -->	
-{% include nav.html %}
+<!-- Header -->
+					<header id="header">
+						<h1><a href="#">SANDEEP GUDIPUDI</a></h1>
+						<!--TODO FOR NOW HIDE NAV-->
+						<!--<nav class="links">
+							<ul>
+								{% for link in site.data.nav %}
+								    <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+								{% endfor %}
+							</ul>
+						</nav>-->
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									{% for link in site.data.nav %}
+								    <li><a href="{{ link.url }}">
+								    	<h3>{{ link.title }}</h3>
+								    	<p>{{ link.excerpt }}</p>
+								    	</a></li>
+								{% endfor %}
+								</ul>
+							</section>
+							
+							<!-- Search -->
+							<section>
+								<form class="search" method="get" action="#">
+									<input type="text" name="query" placeholder="Search" />
+								</form>
+							</section>
+</section>
