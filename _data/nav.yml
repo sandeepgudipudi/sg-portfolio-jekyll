@@ -1,17 +1,9 @@
 # Site navigation links
 
-- title: BLOG
-  url: /work/
-  excerpt: "A collection of thoughts."
-
-- title: WORK
-  url: /work/
-  excerpt: "work or play?."
-
 - title: ABOUT  
   url: /about/
-  excerpt: "About me."
+  excerpt: "He is know for..."
 
 - title: CONTACT
   url: /contact/
-  excerpt: "contact me."
+  excerpt: "Get in touch..."

@@ -1,9 +1,3 @@
 ---
-layout: blog_summary
-excerpt: "Sandeep Gudipudi's personal website and blog"
-tags: [Jekyll, responsive, blog]
-image:
-feature: sample-image-1.jpg
-credit: WeGraphics
-creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+layout: post_list
 ---

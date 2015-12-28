@@ -7,7 +7,8 @@
 /* Post */
 
 	.post {
-		@include padding(_size(section-spacing), _size(section-spacing));
+		/*@include padding(_size(section-spacing), _size(section-spacing));*/
+		padding:2em 1.6em;
 		background: _palette(bg);
 		border: solid 1px _palette(border);
 		margin: 0 0 _size(section-spacing) 0;
@@ -15,9 +16,9 @@
 
 		> header {
 			@include vendor('display', 'flex');
-			border-bottom: solid 1px _palette(border);
+			/*border-bottom: solid 1px _palette(border);*/
 			left: (_size(section-spacing) * -1);
-			margin: (_size(section-spacing) * -1) 0 _size(section-spacing) 0;
+			margin-top: (_size(section-spacing) * -1);
 			position: relative;
 			width: calc(100% + #{_size(section-spacing) * 2});
 
@@ -25,9 +26,9 @@
 				@include vendor('flex-grow', '1');
 				-ms-flex: 1;
 				padding: (_size(section-spacing) * 1.25) _size(section-spacing) (_size(section-spacing) * 1.1) _size(section-spacing);
-
+				text-align:center;
 				h2 {
-					font-weight: _font(weight-heading-extrabold);
+					/*font-weight: _font(weight-heading-extrabold);*/
 					font-size: 1.5em;
 				}
 
@@ -185,16 +186,16 @@
 		}
 
 		@include breakpoint(small) {
-			@include padding(_size(section-spacing-small), _size(section-spacing-small));
-			left: _size(section-spacing-small) * -1;
+			@include padding(_size(section-spacing), _size(section-spacing));
+			left: _size(section-spacing) * -1;
 			margin: 0 0 _size(element-margin) 0;
-			width: calc(100% + (#{_size(section-spacing-small)} * 2));
+			width: calc(100% + (#{_size(section-spacing)} * 2));
 
 			> header {
-				@include padding(_size(section-spacing-small) * 2, _size(section-spacing-small), (0, 0, -0.5em, 0));
-				left: (_size(section-spacing-small) * -1);
-				margin: (_size(section-spacing-small) * -1) 0 _size(section-spacing-small) 0;
-				width: calc(100% + #{_size(section-spacing-small) * 2});
+				@include padding(_size(section-spacing) * 2, _size(section-spacing), (0, 0, -0.5em, 0));
+				left: (_size(section-spacing) * -1);
+				margin: (_size(section-spacing) * -1) 0 _size(section-spacing) 0;
+				width: calc(100% + #{_size(section-spacing) * 2});
 
 				.title {
 					h2 {
@@ -225,9 +226,9 @@
 			}
 
 			> .image.featured {
-				margin-left: _size(section-spacing-small) * -1;
-				margin-top: calc(#{_size(section-spacing-small) * -1} - 1px);
-				width: calc(100% + #{_size(section-spacing-small) * 2});
+				margin-left: _size(section-spacing) * -1;
+				margin-top: calc(#{_size(section-spacing) * -1} - 1px);
+				width: calc(100% + #{_size(section-spacing) * 2});
 			}
 
 			> footer {

@@ -1,15 +1,33 @@
 ---
-layout: default
+layout: main
 ---
-<div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
-</div>
+<!-- Post -->
+            <article class="post cl-effect-13">
+              <header>
+                <div class="title">
+                  <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+                <!-- <p>Lorem ipsum dolor amet nullam consequat etiam feugiat</p> -->
+                </div>
+              <!--  <div class="meta">
+                  <time class="published" datetime="{{ page.date | date: "%F" }}">{{ page.date | date: "%B %d, %Y" }}</time>
+                  {% for category in page.categories limit:1 %}
+                    <a href="#">{{ category }}</a>
+                  {% endfor %}
+              </div>-->
+              </header>
+              {% if page.image %}
+                <a href="{{ page.url }}" class="image featured"><img src="{{ site.baseurl }}/{{page.image}}" alt="" /></a>
+              {% endif %}
+              	{{ content }}
+              <footer>
+              <!--  <ul class="stats">
+                {% for tag in page.tags limit:3 %}
+                  <li><a href="#">{{ tag }}</a></li>
+                {% endfor %}</ul>-->
+        <!--
+        <li><a href="#">General</a></li>
+        <li><a href="#" class="icon fa-heart">28</a></li>
+        <li><a href="#" class="icon fa-comment">128</a></li>
+        -->
+                
+</footer>

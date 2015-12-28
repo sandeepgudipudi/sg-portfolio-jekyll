@@ -56,6 +56,7 @@
 					h3 {
 						@include vendor('transition', 'color #{_duration(transition)} ease');
 						font-size: 0.7em;
+						font-weight: _font(weight-heading-bold);
 					}
 
 					p {
@@ -67,12 +68,6 @@
 						margin-bottom: 0;
 						text-decoration: none;
 						text-transform: uppercase;
-					}
-
-					&:hover {
-						h3 {
-							color: _palette(accent);
-						}
 					}
 				}
 
@@ -91,7 +86,7 @@
 
 		@include breakpoint(small) {
 			> * {
-				padding: _size(section-spacing-small);
+				padding: _size(section-spacing);
 			}
 		}
 	}

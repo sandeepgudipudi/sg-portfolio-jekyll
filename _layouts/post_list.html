@@ -1,0 +1,36 @@
+---
+layout: main
+---
+
+						<!-- Post -->
+					{% for post in site.posts %}  				
+            <article class="post">
+              <header>
+                <div class="title">
+                  <h2><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+                </div>
+               <!-- <div class="meta">
+                  <time class="published" datetime="{{ page.date | date: "%F" }}">{{ page.date | date: "%B %d, %Y" }}</time>
+                  {% for category in page.categories limit:1 %}
+                    <a href="#">{{ category }}</a>
+                  {% endfor %}
+               </div>-->
+              </header>
+              {% if post.image %}
+                <a href="{{ post.url }}" class="image featured"><img src="{{post.image}}" alt="" /></a>
+              {% endif %}
+              <p>{{ post.excerpt}}</p>
+              <footer>
+              	<ul class="actions">
+										<li><a href="{{ post.url }}" class="button big">Read More [...]</a></li>
+									</ul>
+                <ul class="stats">
+                </ul>
+              </footer>
+           </article>
+ {% endfor %}
+						<!-- Pagination 
+							<ul class="actions pagination">
+								<li><a href="" class="disabled button big previous">Previous Page</a></li>
+								<li><a href="#" class="button big next">Next Page</a></li>
+							</ul>-->
