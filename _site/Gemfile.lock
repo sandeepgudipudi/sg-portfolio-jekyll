@@ -131,6 +131,7 @@ DEPENDENCIES
   font-awesome-sass
   github-pages
   jekyll
+  jekyll-paginate
   jekyll-sitemap
 
 BUNDLED WITH

@@ -8,3 +8,4 @@ gem 'jekyll-sitemap'
 gem 'font-awesome-sass'
 
 gem 'github-pages'
+gem 'jekyll-paginate'

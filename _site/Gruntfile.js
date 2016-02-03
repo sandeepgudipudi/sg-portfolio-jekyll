@@ -12,14 +12,14 @@ module.exports = function(grunt) {
 				options : {
 					port : 9000,
 					livereload : true,
-					bases : ['./app']
+					bases : [__dirname]
 				}
 			}
 		},
 		// grunt-watch will monitor the projects files
 		watch : {
 			all : {
-				files:'./app/index.html',
+				files:'./index.html',
 				options : {
 					livereload : true
 				}

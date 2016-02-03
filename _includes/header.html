@@ -2,13 +2,13 @@
 					<header id="header">
 						<h1><a href="/">SANDEEP GUDIPUDI</a></h1>
 						<!--TODO FOR NOW HIDE NAV-->
-						<!--<nav class="links">
+						<nav class="links">
 							<ul>
 								{% for link in site.data.nav %}
 								    <li><a href="{{ link.url }}">{{ link.title }}</a></li>
 								{% endfor %}
 							</ul>
-						</nav>-->
+						</nav>
 						<nav class="main">
 							<ul>
 								<!--<li class="search">
@@ -22,8 +22,8 @@
 								</li>
 							</ul>
 						</nav>
+						{% include follow.html %}
 					</header>
-
 				<!-- Menu -->
 					<section id="menu">
 
@@ -38,7 +38,9 @@
 								{% endfor %}
 								</ul>
 							</section>
-							
+							<section>
+								{% include follow.html %}
+							</section>
 							<!-- Search 
 							<section>
 								<form class="search" method="get" action="#">

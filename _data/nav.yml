@@ -1,5 +1,9 @@
 # Site navigation links
 
+- title: BLOG
+  url: /blog/
+  excerpt: "Random thoughts."
+
 - title: ABOUT  
   url: /about/
   excerpt: "He is know for..."

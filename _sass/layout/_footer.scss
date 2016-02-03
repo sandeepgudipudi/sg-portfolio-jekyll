@@ -10,13 +10,25 @@
 		.icons {
 			color: _palette(fg-light);
 		}
-
+		border:solid 2px;
+		height:3.5em;
+		padding:0.6em;
+		.follow{
+			float:right;
+		}
+	}
+	
+	
 		.copyright {
+			margin-top: 0.6em;
 			color: _palette(fg-light);
 			font-family: _font(family-heading);
-			font-size: 0.5em;
+			font-size: 0.6em;
 			font-weight: _font(weight-heading);
 			letter-spacing: _font(kerning-heading);
 			text-transform: uppercase;
+			float:left;
+			.copy-icon{
+				font-size: 1.4em;
+			}
 		}
-	}

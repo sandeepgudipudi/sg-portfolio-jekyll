@@ -10,4 +10,16 @@
 		@include vendor('flex-grow', '1');
 		-ms-flex: 1;
 		width: 100%;
+		padding: 2em;
+	}
+	
+	body {
+		padding:0 0.5em;
+		margin:0 auto;
+		width:64em;
+		max-width: 100%;
+	}
+	
+	nav.main{
+		display:none;
 	}
