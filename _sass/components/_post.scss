@@ -8,20 +8,22 @@
 
 	.post {
 		/*@include padding(_size(section-spacing), _size(section-spacing));*/
-		padding:0 1.6em 2em 1.6em;
+		padding:0 4.435em 2em 4.435em;
 		background: _palette(bg);
 		border-bottom: solid 1px _palette(border);
 		margin: 0 0 2em 0;
 		position: relative;
-
+		*border: solid 1px green;
 		> header {
 			@include vendor('display', 'flex');
 			/*border-bottom: solid 1px _palette(border);
 			left: (_size(section-spacing) * -1);
 			width: calc(100% + #{_size(section-spacing) * 2});*/
 			position: relative;
+			*border: solid 1px blue;
 
 			.title {
+				*border: solid 1px red;
 				@include vendor('flex-grow', '1');
 				-ms-flex: 1;
 				padding: 0.5em;
@@ -131,12 +133,11 @@
 
 			> header {
 				@include vendor('flex-direction', 'column');
-				@include padding(_size(section-spacing) * 1.25, _size(section-spacing), (0, 0, -0.5em, 0));
 				border-left: 0;
 
 				.title {
 					-ms-flex: 0 1 auto;
-					margin: 0 0 _size(element-margin) 0;
+					*margin: 0 0 _size(element-margin) 0;
 					padding: 0;
 					text-align: center;
 				}
@@ -186,15 +187,14 @@
 		}
 
 		@include breakpoint(small) {
-			@include padding(_size(section-spacing), _size(section-spacing));
+			/*@include padding(_size(section-spacing), _size(section-spacing));*/
 			left: _size(section-spacing) * -1;
 			margin: 0 0 _size(element-margin) 0;
 			width: calc(100% + (#{_size(section-spacing)} * 2));
 
 			> header {
-				@include padding(_size(section-spacing) * 2, _size(section-spacing), (0, 0, -0.5em, 0));
 				left: (_size(section-spacing) * -1);
-				margin: (_size(section-spacing) * -1) 0 _size(section-spacing) 0;
+				*margin: (_size(section-spacing) * -1) 0 _size(section-spacing) 0;
 				width: calc(100% + #{_size(section-spacing) * 2});
 
 				.title {

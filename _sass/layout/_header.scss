@@ -40,6 +40,10 @@
 			background:_palette(accent);
 			a {
 				font-size: 0.7em;
+				color:black;
+				&:hover{
+					color:black !important;
+				}
 			}
 		}
 

@@ -5,7 +5,7 @@ excerpt: "A Korean horror flick that reminded me of the Fatal Frame video game f
 date:   2015-11-14 16:52:07
 categories: jekyll update
 tags: jekyll update
-image: assets/images/1.jpg
+image: assets/images/4.jpeg
 ---
 In the spirit of treating my annual [best-of reading lists]({{ site.url }}) as a sort of Old Year’s resolutions in reverse, reflecting not aspirational priorities for the new year but what proved most worth prioritizing over the year past, here are the fifteen most rewarding books I read in 2015, following the subject-specific selections of the year’s best art books, best science books, and best children’s books. Please enjoy.
 

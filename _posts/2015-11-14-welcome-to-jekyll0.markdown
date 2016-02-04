@@ -5,7 +5,7 @@ excerpt: "A Korean horror flick that reminded me of the Fatal Frame video game f
 date:   2015-11-14 16:52:07
 categories: jekyll update
 tags: jekyll update
-image: assets/images/pic01.jpg
+image: assets/images/800x400.jpg
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
 
